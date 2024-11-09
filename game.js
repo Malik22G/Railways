@@ -69,11 +69,51 @@ const mountainRailUpRight= '/pics/tiles/mountain_rail_up_right.png';
 ]
 
  const hardMaps = [
-    [],
-    [],
-    [],
-    [],
-    []
+    [
+    [empty,mountainLeft,oasis,oasis,empty,bridgeHorizontal,empty],
+    [bridgeVertical,empty,empty,empty,empty,empty,empty],
+    [empty,empty,bridgeVertical,empty,empty,empty,empty],
+    [empty,empty,empty,mountainUpRight,empty,empty,empty],
+    [mountainUpRight,empty,mountainLeft,empty,bridgeHorizontal,empty,oasis],
+    [empty,empty,empty,empty,empty,empty,empty],
+    [empty,empty,empty,bridgeHorizontal,empty,empty,empty]
+],
+[
+    [empty,empty,oasis,empty,empty,empty,empty],
+    [bridgeVertical,empty,bridgeHorizontal,empty,empty,mountainUpLeft,empty],
+    [empty,empty,bridgeHorizontal,empty,empty,empty,bridgeVertical],
+    [mountainRight,empty,empty,empty,empty,empty,empty],
+    [empty,oasis,empty,mountainLeft,empty,empty,empty],
+    [empty,mountainRight,empty,empty,empty,empty,empty],
+    [empty,empty,oasis,empty,empty,empty,empty]
+],
+[
+    [empty,empty,bridgeHorizontal,empty,empty,empty,empty],
+    [empty,empty,empty,empty,empty,empty,bridgeVertical],
+    [oasis,empty,mountainUpRight,empty,empty,empty,empty],
+    [empty,empty,empty,empty,empty,empty,empty],
+    [empty,oasis,mountainUpRight,empty,bridgeHorizontal,empty,empty],
+    [bridgeVertical,empty,empty,empty,empty,mountainLeft,empty],
+    [empty,empty,oasis,mountainUpRight,empty,empty,empty]
+],
+[
+    [empty,empty,empty,empty,empty,empty,empty],
+    [empty,empty,empty,bridgeVertical,empty,mountainUpLeft,empty],
+    [empty,empty,mountainUpRight,empty,empty,empty,empty],
+    [empty,bridgeHorizontal,empty,oasis,empty,bridgeHorizontal,empty],
+    [empty,empty,mountainUpLeft,empty,mountainLeft,empty,empty],
+    [bridgeVertical,empty,empty,empty,empty,mountainUpRight,empty],
+    [empty,empty,empty,empty,empty,empty,empty]
+],
+[
+    [empty,empty,empty,empty,empty,empty,empty],
+    [empty,empty,empty,empty,empty,mountainRight,empty],
+    [empty,bridgeHorizontal,bridgeHorizontal,empty,mountainLeft,empty,empty],
+    [empty,empty,empty,empty,empty,empty,empty],
+    [empty,empty,mountainRight,empty,oasis,empty,empty],
+    [empty,mountainUpLeft,empty,bridgeVertical,empty,empty,empty],
+    [empty,empty,empty,empty,empty,empty,empty]
+]
 ]
 
 
@@ -182,7 +222,7 @@ const mountainRailUpRight= '/pics/tiles/mountain_rail_up_right.png';
     });
     
     document.getElementById('playAgainButton').addEventListener('click', function() {
-        location.reload(); // Reload the game
+        location.reload(); 
     });
     function displayWin(time, difficulty) {
         const playerName = document.getElementById("showName").textContent;
@@ -197,11 +237,10 @@ const mountainRailUpRight= '/pics/tiles/mountain_rail_up_right.png';
     
     function updateLeaderboard(playerName, time, difficulty) {
         const leaderboard = JSON.parse(localStorage.getItem('leaderboardRailWays')) || [];
-        localStorage.clear();
         leaderboard.push({ name: playerName, time: time, difficulty: difficulty });
         leaderboard.sort((a, b) => a.time - b.time);
         if (leaderboard.length > 5) {
-            leaderboard.length = 5; // Keep only top 5
+            leaderboard.length = 5; 
         }
         localStorage.setItem('leaderboardRailWays', JSON.stringify(leaderboard));
     }

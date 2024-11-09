@@ -1,4 +1,3 @@
-/* Resetting default styles and setting overflow to prevent horizontal scroll */
 body,
 input,
 button {
@@ -13,7 +12,6 @@ button {
   text-align: center;
 }
 
-/* Ensuring the main container covers the entire viewport height and centers its children */
 .min-h-screen {
   display: flex;
   flex-direction: column;
@@ -24,12 +22,10 @@ button {
   padding: 20px;
 }
 
-/* Styling for hidden elements */
 .hidden {
   display: none;
 }
 
-/* Large, golden title with shadow for depth */
 .title {
   font-size: 4rem;
   color: #c4a052;
@@ -37,7 +33,6 @@ button {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Input styling with consistent width and padding */
 .input {
   width: 300px;
   padding: 12px 20px;
@@ -47,12 +42,10 @@ button {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Darker border on input focus for better visibility */
 .input:focus {
   border-color: #aaa;
 }
 
-/* Standard button styling */
 .button {
   padding: 12px 20px;
   width: 300px;
@@ -64,14 +57,12 @@ button {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Button hover and selected state styles */
 .button:hover,
 .button.selected {
   background-color: #444;
   color: white;
 }
 
-/* Difficulty selector styling with shadow */
 #difficultySelector {
   padding: 20px;
   background-color: white;
@@ -82,7 +73,6 @@ button {
   margin-bottom: 10px;
 }
 
-/* Fixed railway track decoration at the bottom of the viewport */
 .railway-track {
   position: fixed;
   bottom: 0;
@@ -93,7 +83,6 @@ button {
   background-repeat: repeat-x;
 }
 
-/* Modal background and content styling */
 .modal {
   display: none;
   position: fixed;
@@ -147,7 +136,6 @@ button {
   border: 1px solid #ccc;
 }
 
-/* Winning modal positioning and styling */
 .modalWinning {
   display: none;
   position: fixed;
@@ -169,7 +157,6 @@ button {
   cursor: pointer;
 }
 
-/* Play again button styling */
 button#playAgainButton {
   width: 100%;
   padding: 10px;
@@ -202,12 +189,17 @@ button#playAgainButton:hover {
 }
 .custom-hr {
   border: 0;
-  border-top: 3px solid #d4b07f; /* Adjust this color to match the thin line color */
-  width: 80%; /* Adjust width as needed */
-  margin: 10px auto; /* Centers the line and adds some vertical spacing */
+  border-top: 3px solid #d4b07f;
+  width: 80%;
+  margin: 10px auto;
 }
 #gameArea {
   border: 4px solid rgb(80, 51, 51);
   padding: 0;
   border-radius: 10px;
+}
+
+#gameScreen {
+  background-color: #f8faf0;
+  height: 100vh;
 }

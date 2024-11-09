@@ -1,0 +1,213 @@
+/* Resetting default styles and setting overflow to prevent horizontal scroll */
+body,
+input,
+button {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-align: center;
+}
+.buttons {
+  text-align: center;
+}
+
+/* Ensuring the main container covers the entire viewport height and centers its children */
+.min-h-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fdfbf4;
+  padding: 20px;
+}
+
+/* Styling for hidden elements */
+.hidden {
+  display: none;
+}
+
+/* Large, golden title with shadow for depth */
+.title {
+  font-size: 4rem;
+  color: #c4a052;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input styling with consistent width and padding */
+.input {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Darker border on input focus for better visibility */
+.input:focus {
+  border-color: #aaa;
+}
+
+/* Standard button styling */
+.button {
+  padding: 12px 20px;
+  width: 300px;
+  border-radius: 25px;
+  background-color: #f8f8f8;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button hover and selected state styles */
+.button:hover,
+.button.selected {
+  background-color: #444;
+  color: white;
+}
+
+/* Difficulty selector styling with shadow */
+#difficultySelector {
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 340px;
+  margin-bottom: 10px;
+}
+
+/* Fixed railway track decoration at the bottom of the viewport */
+.railway-track {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='15' width='40' height='10' fill='%23c4a052'/%3E%3Crect x='5' y='10' width='4' height='20' fill='%238b6d2f'/%3E%3Crect x='31' y='10' width='4' height='20' fill='%238b6d2f'/%3E%3C/svg%3E");
+  background-size: 40px 40px;
+  background-repeat: repeat-x;
+}
+
+/* Modal background and content styling */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Game area grid layout */
+#gameArea {
+  display: grid;
+}
+
+.game-area {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.cell {
+  aspect-ratio: 1;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ccc;
+}
+
+/* Winning modal positioning and styling */
+.modalWinning {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.modal-content {
+  margin-bottom: 20px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+/* Play again button styling */
+button#playAgainButton {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #f8f8f8;
+  background-color: rgb(2, 118, 233);
+}
+
+button#playAgainButton:hover {
+  background-color: rgb(5, 94, 184);
+}
+
+.playerInfo {
+  background-color: aqua;
+  width: 200px;
+  height: 200px;
+}
+.gameDetails {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: max-content;
+}
+.gameDetails h4 {
+  color: #6a67678d;
+}
+.custom-hr {
+  border: 0;
+  border-top: 3px solid #d4b07f; /* Adjust this color to match the thin line color */
+  width: 80%; /* Adjust width as needed */
+  margin: 10px auto; /* Centers the line and adds some vertical spacing */
+}
+#gameArea {
+  border: 4px solid rgb(80, 51, 51);
+  padding: 0;
+  border-radius: 10px;
+}

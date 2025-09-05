@@ -1,29 +1,29 @@
 //tiles
-const empty = '/pics/tiles/empty.png';
-const oasis = '/pics/tiles/oasis.png';
-const bridgeVertical = '/pics/tiles/bridge_vertical.png';
-const bridgeHorizontal = '/pics/tiles/bridge_horizontal.png';
-const mountainLeft = '/pics/tiles/mountain_left.png';
-const mountainRight = '/pics/tiles/mountain_right.png';
-const mountainUpLeft = '/pics/tiles/mountain_up_left.png';
-const mountainUpRight= '/pics/tiles/mountain_up_right.png';
+const empty = 'pics/tiles/empty.png';
+const oasis = 'pics/tiles/oasis.png';
+const bridgeVertical = 'pics/tiles/bridge_vertical.png';
+const bridgeHorizontal = 'pics/tiles/bridge_horizontal.png';
+const mountainLeft = 'pics/tiles/mountain_left.png';
+const mountainRight = 'pics/tiles/mountain_right.png';
+const mountainUpLeft = 'pics/tiles/mountain_up_left.png';
+const mountainUpRight= 'pics/tiles/mountain_up_right.png';
 
 
 //Rails
-const straightRail = '/pics/tiles/straight_rail.png';
-const horizontalRail = '/pics/tiles/horizontal_rail.png';
-const curveRailRight = '/pics/tiles/curve_rail_right.png';
-const curveRailLeft = '/pics/tiles/curve_rail_left.png';
-const curveRailUpRight = '/pics/tiles/curve_rail_up_right.png';
-const curveRailUpLeft = '/pics/tiles/curve_rail_up_left.png';
+const straightRail = 'pics/tiles/straight_rail.png';
+const horizontalRail = 'pics/tiles/horizontal_rail.png';
+const curveRailRight = 'pics/tiles/curve_rail_right.png';
+const curveRailLeft = 'pics/tiles/curve_rail_left.png';
+const curveRailUpRight = 'pics/tiles/curve_rail_up_right.png';
+const curveRailUpLeft = 'pics/tiles/curve_rail_up_left.png';
 
-const bridgeRailVertical = '/pics/tiles/bridge_rail_vertical.png';
-const bridgeRailHorizontal = '/pics/tiles/bridge_rail_horizontal.png';
+const bridgeRailVertical = 'pics/tiles/bridge_rail_vertical.png';
+const bridgeRailHorizontal = 'pics/tiles/bridge_rail_horizontal.png';
 
-const mountainRailLeft = '/pics/tiles/mountain_rail_left.png';
-const mountainRailRight = '/pics/tiles/mountain_rail_right.png';
-const mountainRailUpLeft = '/pics/tiles/mountain_rail_up_left.png';
-const mountainRailUpRight= '/pics/tiles/mountain_rail_up_right.png';
+const mountainRailLeft = 'pics/tiles/mountain_rail_left.png';
+const mountainRailRight = 'pics/tiles/mountain_rail_right.png';
+const mountainRailUpLeft = 'pics/tiles/mountain_rail_up_left.png';
+const mountainRailUpRight= 'pics/tiles/mountain_rail_up_right.png';
 
 
  const easyMaps = [
